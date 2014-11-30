@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class SecondProject {
 public static void main(String args[]){
-    Scanner input=new Scanner(System.in, "UTF-8");
+    Scanner input=new Scanner(System.in);
     System.out.println("Enter number 1: ");
     int number1=input.nextInt();
     System.out.println("Enter number 2: ");
