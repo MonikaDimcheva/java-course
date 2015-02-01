@@ -1,11 +1,12 @@
 package shop;
 
 public class Vegetables extends Stock {
-	
+
 	private boolean hasSeeds;
 	private String name;
 
-	public Vegetables(float price,boolean isInStock,boolean hasSeeds, String name){
+	public Vegetables(float price, boolean isInStock, boolean hasSeeds,
+			String name) {
 		setPrice(price);
 		setIsInStock(isInStock);
 		setHasSeeds(hasSeeds);
@@ -19,6 +20,7 @@ public class Vegetables extends Stock {
 	public void setHasSeeds(boolean hasSeeds) {
 		this.hasSeeds = hasSeeds;
 	}
+
 	public String getName() {
 		return name;
 	}
@@ -26,5 +28,5 @@ public class Vegetables extends Stock {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }

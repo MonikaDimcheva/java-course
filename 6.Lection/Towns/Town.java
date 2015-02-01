@@ -1,15 +1,14 @@
-
 public class Town {
-	
+
 	private String name;
 	private String country;
 	private String population;
-	
-	public Town(String name, String country, String population){
+
+	public Town(String name, String country, String population) {
 		super();
-		this.name=name;
-		this.country=country;
-		this.population=population;
+		this.name = name;
+		this.country = country;
+		this.population = population;
 	}
 
 	public String getName() {
@@ -35,13 +34,10 @@ public class Town {
 	public void setPopulation(String population) {
 		this.population = population;
 	}
-	
-	public int hashCode(){
+
+	public int hashCode() {
 		return (this.name + this.country + this.population).hashCode();
-		
+
 	}
-	
-	
-	
 
 }

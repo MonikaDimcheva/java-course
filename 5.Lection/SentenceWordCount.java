@@ -1,27 +1,29 @@
 import java.util.Scanner;
-
+//Задача:
+//Направете програма която приема изречение и брои колко думи има в него
 
 public class SentenceWordCount {
 
-
-
 	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);
-		System.out.println("Enter sentence and see how many words are in it!: ");
-		String sentence=input.nextLine();
-		System.out.println(sentence);
-		
-		int counter=1;
 
-		for(int i=0; i<=sentence.length()-1; i++){
-	        
-			if(sentence.charAt(i)==' ' && sentence.charAt(i+1)!=' '){
+		Scanner input = new Scanner(System.in);
+		System.out
+				.println("Enter sentence and see how many words are in it!: ");
+		String sentence = input.nextLine();
+		System.out.println(sentence);
+
+		int counter = 1;
+
+		for (int i = 0; i <= sentence.length() - 1; i++) {
+
+			if (sentence.charAt(i) == ' ' && sentence.charAt(i + 1) != ' ') {
 				counter++;
-			} else if(sentence.charAt(i)==','&& sentence.charAt(i+1)!=' '){
+			} else if (sentence.charAt(i) == ','
+					&& sentence.charAt(i + 1) != ' ') {
 				counter++;
 			}
-		
+
+		}
+		System.out.println("Words is this sentence are: " + counter);
 	}
-		System.out.println("Words is this sentence are: "+counter);
-}
 }

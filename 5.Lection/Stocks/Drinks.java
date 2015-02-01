@@ -3,13 +3,14 @@ package shop;
 public class Drinks extends Stock {
 	private String name;
 	private boolean isCarbonatedDrink;
-	
-	public Drinks(float price, boolean isInStock, String name, boolean isCarbonatedDrink){
+
+	public Drinks(float price, boolean isInStock, String name,
+			boolean isCarbonatedDrink) {
 		setPrice(price);
 		setIsInStock(isInStock);
 		setName(name);
 		setIsCarbonatedDrink(isCarbonatedDrink);
-		
+
 	}
 
 	public String getName() {
@@ -27,7 +28,5 @@ public class Drinks extends Stock {
 	public void setIsCarbonatedDrink(boolean isCarbonatedDrink) {
 		this.isCarbonatedDrink = isCarbonatedDrink;
 	}
-	
-	
 
 }

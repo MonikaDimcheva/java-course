@@ -1,5 +1,8 @@
 package homework2;
 
+Задача:
+Направете програма, която принтира на екрана числата от 30 до 1 
+в обратен ред подредени в 5 реда и 6 колони
 public class ThirtyNumbersRowsAndColumns {
 	public static void main(String[] args) {
 		
